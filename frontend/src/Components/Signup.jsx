@@ -6,15 +6,19 @@ const Signup = () => {
         <h1 className='text-2xl font-bold'>Signup</h1>
         <div className='flex flex-col gap-2 w-full'>
           <label htmlFor="username">Username:</label>
-          <input type="text" id="username" name="username" required className='p-2 rounded'/>
+          <input type="text" id="username" name="username" required className='p-2 rounded text-black'/>
         </div>
         <div className='flex flex-col gap-2 w-full'>
           <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required className='p-2 rounded'/>
+          <input type="email" id="email" name="email" required className='p-2 rounded text-black'/>
         </div>
         <div className='flex flex-col gap-2 w-full'>
           <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" required className='p-2 rounded'/>
+          <input type="password" id="password" name="password" required className='p-2 rounded text-black'/>
+        </div>
+        <div className='flex flex-col gap-2 w-full'>
+          <label htmlFor="cpassword">Confirm Password:</label>
+          <input type="password" id="cpassword" name="cpassword" required className='p-2 rounded text-black'/>
         </div>
         <a href='/login' className='p-3 rounded-full bg-white text-black'>Signup</a>
       </form>

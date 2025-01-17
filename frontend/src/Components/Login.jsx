@@ -7,11 +7,11 @@ const Login = () => {
         <h1 className='text-2xl font-bold'>Login</h1>
         <div className='flex flex-col gap-2 w-full'>
           <label htmlFor="username">Username:</label>
-          <input className='p-2 rounded' type="text" id="username" name="username" required />
+          <input className='p-2 rounded text-black' type="text" id="username" name="username" required />
         </div>
         <div className='flex flex-col gap-2 w-full'>
           <label htmlFor="password">Password:</label>
-          <input className='p-2 rounded' type="password" id="password" name="password" required />
+          <input className='p-2 rounded text-black' type="password" id="password" name="password" required />
         </div>
         <a href='/hero' className='p-3 rounded-full bg-white text-black mt-5'>Login</a>  
       </form>
