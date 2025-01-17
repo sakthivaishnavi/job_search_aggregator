@@ -4,6 +4,7 @@ import bg from './assets/bg.jpeg';
 import Signup from './Components/Signup';
 import Login from './Components/Login';
 import Hero from './Components/Hero';
+import Contact from './Components/Contact';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 
 const App = () => {
@@ -28,8 +29,17 @@ const App = () => {
         </div>
         }/>
 
+<Route path = '/contact' element = {
+      <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', opacity: '0.9' }}>
+        <Contact/>
+        </div>
+        }/>
+
+
         <Route path = '/hero' element = {
+          <div style={{ backgroundColor:'lightblue', backgroundSize: 'cover', backgroundPosition: 'center', opacity: '0.9' }}>
           <Hero/>
+          </div>
         }/>
     </Routes>
   )
