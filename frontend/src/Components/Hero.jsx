@@ -34,7 +34,10 @@ const Hero = () => {
     <div className="p-8">
     <div className='flex justify-between items-center mb-8'>
       <h1 className="text-4xl font-bold text-center">Job Listings</h1>
+      <div className='flex gap-5 items-center justify-center'>
       <a href='/contact' className='text-black font-semibold text-xl underline'>Contact Us</a>
+      <a href='/login' className='text-black font-semibold text-xl underline'>Logout</a>
+      </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 ">
         {jobs.map((job, index) => (
